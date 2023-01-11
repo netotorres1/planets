@@ -1,20 +1,21 @@
 import React from 'react'
-import {Container, Logo, Nav, ButtonMercury , ButtonVenus, ButtonEarth, ButtonMars, ButtonJupiter, ButtonSaturn, ButtonUranus, ButtonNeptune } from './style'
+import { Link } from 'react-router-dom';
+import {Container, Logo, Nav, ButtonMercury, ButtonVenus, ButtonEarth, ButtonMars, ButtonJupiter, ButtonSaturn, ButtonUranus, ButtonNeptune } from './style'
 
 const Navbar: React.FC = () => {
     return(
         <Container>
-            <Logo>The Planets</Logo>
-            <Nav>
-                <ButtonMercury>Mercury</ButtonMercury>
-                <ButtonVenus>Venus</ButtonVenus>
-                <ButtonEarth>Earth</ButtonEarth>
-                <ButtonMars>Mars</ButtonMars>
-                <ButtonJupiter>Jupiter</ButtonJupiter>
-                <ButtonSaturn>Saturn</ButtonSaturn>
-                <ButtonUranus>Uranus</ButtonUranus>
-                <ButtonNeptune>Neptune</ButtonNeptune>
-            </Nav>
+                <Logo>The Planets</Logo>
+                <Nav>
+                    <Link to={'/'}><ButtonMercury>Mercury</ButtonMercury></Link>
+                    <Link to={'/venus'}><ButtonVenus>Venus</ButtonVenus></Link>
+                    <Link to={'/earth'}><ButtonEarth>Earth</ButtonEarth></Link>
+                    <Link to={'/mars'}><ButtonMars>Mars</ButtonMars></Link>
+                    <Link to={'/jupiter'}><ButtonJupiter>Jupiter</ButtonJupiter></Link>
+                    <Link to={'/saturn'}><ButtonSaturn>Saturn</ButtonSaturn></Link>
+                    <Link to={'/uranus'}><ButtonUranus>Uranus</ButtonUranus></Link>
+                    <Link to={'/neptune'}><ButtonNeptune>Neptune</ButtonNeptune></Link>
+                </Nav>
         </Container>
     );
 }

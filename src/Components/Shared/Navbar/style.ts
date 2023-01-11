@@ -1,7 +1,9 @@
 import styled from 'styled-components';
-const bg = require('./../../../assets/background-stars.svg')
+import {tablet, mobile} from './../../../responsive'
+const bg = require('./../../../assets/background-stars.svg').default;
 
 export const Container = styled.header`
+    width: 100vw;
     background-color: #070724;
     color: #fff;
     display: flex;
@@ -11,138 +13,161 @@ export const Container = styled.header`
     font-family: antonio;
     border-bottom: 2px solid #38384f;
     background-image: url(${bg});
+    ${tablet({width: '768px'})};
+    ${tablet({display: 'flex'})};
+    ${tablet({flexDirection: 'column'})};
+    ${tablet({justifyContent: 'center'})};
+
 `
 export const Logo = styled.h1`
     padding: 25px;
     text-transform: uppercase;
     font-size: 30px;
     line-height: 2px;
+    font-weight: 300;
+    ${tablet({padding: '50px'})};
 `
 
 export const Nav = styled.nav`
     display: flex;
     justify-content: space-around;
     width: 50%;
-    padding-right: 30px;
+    ${tablet({width: '90%'})};
 `
 
 export const ButtonMercury = styled.button`
-padding: 25px;
-background-color: transparent;
-text-transform: uppercase;
-font-family: antonio;
-font-size: 17px;
-letter-spacing: 2px;
-color: #838391;
-border: none;
-border-bottom: 3px solid transparent;
+    padding: 25px;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-family: antonio;
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: #838391;
+    border: none;
+    border-top: 3px solid transparent;
+    ${tablet({padding: '20px'})};
 
-&:hover{
-    border-bottom: 3px solid #ffffff;
-}
+    &:hover{
+        border-top: 3px solid #ffffff;
+        color: #fff;
+    }
 `
 export const ButtonVenus = styled.button`
-padding: 25px;
-background-color: transparent;
-text-transform: uppercase;
-font-family: antonio;
-font-size: 17px;
-letter-spacing: 2px;
-color: #838391;
-border: none;
-border-bottom: 3px solid transparent;
+    padding: 25px;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-family: antonio;
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: #838391;
+    border: none;
+    border-top: 3px solid transparent;
+    ${tablet({padding: '20px'})};
 
-&:hover{
-    border-bottom: 3px solid #EDA249;
-}
+    &:hover{
+        border-top: 3px solid #EDA249;
+        color: #fff;
+    }
 `
 export const ButtonEarth = styled.button`
-padding: 25px;
-background-color: transparent;
-text-transform: uppercase;
-font-family: antonio;
-font-size: 17px;
-letter-spacing: 2px;
-color: #838391;
-border: none;
-border-bottom: 3px solid transparent;
+    padding: 25px;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-family: antonio;
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: #838391;
+    border: none;
+    border-top: 3px solid transparent;
+    ${tablet({padding: '20px'})};
 
-&:hover{
-    border-bottom: 3px solid #6f2ed6;
-}
+    &:hover{
+        border-top: 3px solid #6f2ed6;
+        color: #fff;
+    }
 `
 export const ButtonMars = styled.button`
-padding: 25px;
-background-color: transparent;
-text-transform: uppercase;
-font-family: antonio;
-font-size: 17px;
-letter-spacing: 2px;
-color: #838391;
-border: none;
-border-bottom: 3px solid transparent;
+    padding: 25px;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-family: antonio;
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: #838391;
+    border: none;
+    border-top: 3px solid transparent;
+    ${tablet({padding: '20px'})};
 
-&:hover{
-    border-bottom: 3px solid #d14c32;
-}
+    &:hover{
+        border-top: 3px solid #d14c32;
+        color: #fff;
+    }
 `
 export const ButtonJupiter = styled.button`
-padding: 25px;
-background-color: transparent;
-text-transform: uppercase;
-font-family: antonio;
-font-size: 17px;
-letter-spacing: 2px;
-color: #838391;
-border: none;
-border-bottom: 3px solid transparent;
+    padding: 25px;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-family: antonio;
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: #838391;
+    border: none;
+    border-top: 3px solid transparent;
+    ${tablet({padding: '20px'})};
 
-&:hover{
-    border-bottom: 3px solid #d83a34;
-}
+    &:hover{
+        border-top: 3px solid #d83a34;
+        color: #fff;
+    }
 `
 export const ButtonSaturn = styled.button`
-padding: 25px;
-background-color: transparent;
-text-transform: uppercase;
-font-family: antonio;
-font-size: 17px;
-letter-spacing: 2px;
-color: #838391;
-border: none;
-border-bottom: 3px solid transparent;
+    padding: 25px;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-family: antonio;
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: #838391;
+    border: none;
+    border-top: 3px solid transparent;
+    ${tablet({padding: '20px'})};
 
-&:hover{
-    border-bottom: 3px solid #cd5120;
-}
+    &:hover{
+        border-top: 3px solid #cd5120;
+        color: #fff;
+    }
 `
 export const ButtonUranus = styled.button`
-padding: 25px;
-background-color: transparent;
-text-transform: uppercase;
-font-family: antonio;
-font-size: 17px;
-letter-spacing: 2px;
-color: #838391;
-border: none;
-border-bottom: 3px solid transparent;
+    padding: 25px;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-family: antonio;
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: #838391;
+    border: none;
+    border-top: 3px solid transparent;
+    ${tablet({padding: '20px'})};
 
-&:hover{
-    border-bottom: 3px solid #1ce2a4;
-}
+    &:hover{
+        border-top: 3px solid #1ce2a4;
+        color: #fff;
+    }
 `
 export const ButtonNeptune = styled.button`
-padding: 25px;
-background-color: transparent;
-text-transform: uppercase;
-font-family: antonio;
-font-size: 17px;
-letter-spacing: 2px;
-color: #838391;
-border: none;
-border-bottom: 3px solid transparent;
+    padding: 25px;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-family: antonio;
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: #838391;
+    border: none;
+    border-top: 3px solid transparent;
+    ${tablet({padding: '20px'})};
 
-&:hover{
-    border-bottom: 3px solid #2d68f0;
-}
+    &:hover{
+        border-top: 3px solid #2d68f0;
+        color: #fff;
+    }
 `
