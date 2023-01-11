@@ -25,7 +25,7 @@ export const OverViewBtn = styled.button`
     border: none;
 
     &:hover{
-        ${mobile({borderBottom: '3px solid #419ebb'})};
+        ${mobile({borderBottom: '3px solid #eda249'})};
     }
 `
 export const StructureBtn = styled.button`
@@ -38,7 +38,7 @@ export const StructureBtn = styled.button`
     border: none;
 
     &:hover{
-        ${mobile({borderBottom: '3px solid #419ebb'})};
+        ${mobile({borderBottom: '3px solid #eda249'})};
     }
 `
 export const Surface = styled.button`
@@ -51,7 +51,7 @@ export const Surface = styled.button`
     border: none;
 
     &:hover{
-        ${mobile({borderBottom: '3px solid #419ebb'})};
+        ${mobile({borderBottom: '3px solid #eda249'})};
     }
 `
 
@@ -73,6 +73,7 @@ export const Container = styled.section`
     background-image: url(${bg});
     ${tablet({width: '768px'})};
     ${mobile({width: '380px'})};
+    ${mobile({marginTop: '0px'})};
 `
 export const ContainerContent = styled.div`
     width: 75%;
@@ -213,7 +214,7 @@ export const Overview = styled.button`
     margin-bottom: 15px;
 
     &:hover{
-        background-color: #419ebb;
+        background-color: #eda249;
         border: none;
     }
 
@@ -234,7 +235,7 @@ export const InternalStructure = styled.button`
     margin-bottom: 15px;
 
     &:hover{
-        background-color: #419ebb;
+        background-color: #eda249;
         border: none;
     }
     ${mobile({fontSize: '10px'})};
@@ -253,7 +254,7 @@ export const SurfaceGeology = styled.button`
     margin-bottom: 15px;
 
     &:hover{
-        background-color: #419ebb;
+        background-color: #eda249;
         border: none;
     }
     ${mobile({fontSize: '10px'})};
