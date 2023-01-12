@@ -196,8 +196,8 @@ export const ContainerButtons = styled.div`
     ${mobile({display: 'flex'})};
     ${mobile({flexDirection: 'row'})};
     ${mobile({width: '90%'})};
-    ${mobile({position: 'absolute'})};
-    ${mobile({bottom: '550px'})};
+    ${mobile({position: 'relative'})};
+    ${mobile({bottom: '670px'})};
     ${mobile({height: '70px'})};
 `
 export const Overview = styled.button`
