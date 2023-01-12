@@ -88,7 +88,7 @@ export const ContainerContent = styled.div`
 
     ${mobile({width: '100%'})};
     ${tablet({marginTop: '300px'})};
-    ${tablet({marginBottom: '100px'})};
+    ${mobile({marginBottom: '150px'})};
 `
 export const ContainerLeft = styled.div`
     width: 70%;

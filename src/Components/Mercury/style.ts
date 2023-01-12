@@ -7,6 +7,7 @@ export const ButtonsMobile = styled.div`
     ${mobile({width: '380px'})};
     ${mobile({position: 'relative'})};
     ${mobile({bottom: '270px'})};
+    ${mobile({bottom: '240px'})};
     ${mobile({left: '0px'})};
     ${mobile({display: 'flex'})};
     ${mobile({justifyContent: 'space-between'})};
@@ -88,7 +89,7 @@ export const ContainerContent = styled.div`
 
     ${mobile({width: '100%'})};
     ${tablet({marginTop: '300px'})};
-    ${tablet({marginBottom: '100px'})};
+    ${mobile({marginBottom: '150px'})};
 `
 export const ContainerLeft = styled.div`
     width: 70%;
