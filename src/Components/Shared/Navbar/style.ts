@@ -123,6 +123,7 @@ export const Logo = styled.h1`
     font-size: 30px;
     line-height: 2px;
     font-weight: 300;
+    color: #fff;
     ${tablet({padding: '50px'})};
 
     ${mobile({padding: '35px'})};

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {useState} from 'react'
 
 import {Container, ContainerContent, ContainerLeft, ContainerRight, Title, Source, ContainerButtons, Overview, InternalStructure,
@@ -7,11 +7,12 @@ import {Container, ContainerContent, ContainerLeft, ContainerRight, Title, Sourc
      RadiusTimeKm, AverageTempTimeTitle, AverageTempGraus, ContainerRightContent, ButtonsMobile , OverViewBtn, StructureBtn, Surface
     } from './style'
 
-const venus = require('./../../assets/planet-venus.svg').default;
-const venusInternal = require('./../../assets/planet-venus-internal.svg').default;
-const venusgeology = require('./../../assets/geology-venus.png');
+const saturn = require('./../../assets/planet-saturn.svg').default;
+const saturnInternal = require('./../../assets/planet-saturn-internal.svg').default;
+const saturngeology = require('./../../assets/geology-saturn.png');
 
-const Venus = () => {
+const Saturn = () => {
+
     const [overview, setOverView] = useState(true)
     const [internalStructure, setinternalStructure] = useState(false)
     const [surfaceGeology, setSurfaceGeology] = useState(false)
@@ -39,9 +40,9 @@ const Venus = () => {
         <Container>
             <ContainerContent>
                 <ContainerLeft>
-                    {overview === true ? <ImageOverView src={venus} /> : <></>}
-                    {internalStructure  === true ? <ImageInternalStructure src={venusInternal} /> : <></>}
-                    {surfaceGeology === true ? <ImageSurfaceGeology src={venusgeology} /> : <></>}
+                    {overview === true ? <ImageOverView src={saturn} /> : <></>}
+                    {internalStructure  === true ? <ImageInternalStructure src={saturnInternal} /> : <></>}
+                    {surfaceGeology === true ? <ImageSurfaceGeology src={saturngeology} /> : <></>}
                 </ContainerLeft>
                 <ButtonsMobile>
                     <OverViewBtn  onClick={handleChangeOverView}>Overview</OverViewBtn>
@@ -50,23 +51,23 @@ const Venus = () => {
                 </ButtonsMobile>
                 <ContainerRight>
                     <ContainerRightContent>
-                        <Title>Venus</Title>
-                        {overview === true ? <AboutOverview>Venus is the second planet from the Sun. It is named after the 
-                        Roman goddess of love and beauty. As the brightest natural object 
-                        in Earth's night sky after the Moon, Venus can cast shadows and 
-                        can be, on rare occasions, visible to the naked eye in broad daylight.
+                        <Title>Saturn</Title>
+                        {overview === true ? <AboutOverview>Saturn is the sixth planet from the Sun and the second-largest in the Solar 
+                            System, after Jupiter. It is a gas giant with an average radius of about 
+                            nine and a half times that of Earth. It only has one-eighth the average 
+                            density of Earth.
                         </AboutOverview> : <></>}
                         {internalStructure  === true ? <AboutInternalStructure>
-                            The similarity in size and density between Venus and Earth suggests 
-                            they share a similar internal structure: a core, mantle, and crust. 
-                            Like that of Earth, Venusian core is most likely at least partially 
-                            liquid because the two planets have been cooling at about the same rate.
+                            Despite consisting mostly of hydrogen and helium, most of Saturn's mass 
+                            is not in the gas phase, because hydrogen becomes a non-ideal liquid 
+                            when the density is above 0.01 g/cm3, which is reached at a radius 
+                            containing 99.9% of Saturn's mass.
                         </AboutInternalStructure> : <></>}
                         {surfaceGeology === true ? <AboutSurfaceGeology>
-                            Much of the Venusian surface appears to have been shaped by volcanic activity. 
-                            Venus has several times as many volcanoes as Earth, and it has 167 large 
-                            volcanoes that are over 100 km (60 mi) across. The only volcanic complex 
-                            of this size on Earth is the Big Island of Hawaii.
+                            The outer atmosphere of Saturn contains 96.3% molecular hydrogen and 3.25% 
+                            helium by volume. The planet's most famous feature is its prominent ring 
+                            system, which is composed mostly of ice particles with a smaller amount 
+                            of rocky debris and dust. 
                         </AboutSurfaceGeology> : <></>}
                         <Source>Source: Wikipeadia</Source>
                     </ContainerRightContent>
@@ -81,22 +82,23 @@ const Venus = () => {
             <ContainerBottom>
                 <RotationTime>
                     <RotationTimeTitle>Rotation Time</RotationTimeTitle>
-                    <RotationTimeDays>243 Days</RotationTimeDays>
+                    <RotationTimeDays>10.8 Hours</RotationTimeDays>
                 </RotationTime>
                 <RevolutionTime>
                     <RevolutionTimeTitle>Revolution Time</RevolutionTimeTitle>
-                    <RevolutionTimeDays>224.7 Days</RevolutionTimeDays>
+                    <RevolutionTimeDays>29.46 Years</RevolutionTimeDays>
                 </RevolutionTime>
                 <Radius>
                     <RadiusTimeTitle>Radius</RadiusTimeTitle>
-                    <RadiusTimeKm>6,051.8 KM</RadiusTimeKm>
+                    <RadiusTimeKm>58,232 KM</RadiusTimeKm>
                 </Radius>
                 <AverageTemp>
                     <AverageTempTimeTitle> Average Temp</AverageTempTimeTitle>
-                    <AverageTempGraus>471°c</AverageTempGraus>
+                    <AverageTempGraus>-138°c</AverageTempGraus>
                 </AverageTemp>
             </ContainerBottom>
-        </Container>)
+        </Container>
+    );
 }
 
-export default Venus
+export default Saturn

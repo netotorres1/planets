@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
 
     return(
         <Container>
-                <Logo>The Planets</Logo>
+                <Link to={'/'}><Logo>The Planets</Logo></Link>
                 <Nav className={openMenu !== true ? '' : 'open'}>
                     <Link to={'/'}><ButtonMercury><CircleMercury></CircleMercury>Mercury</ButtonMercury></Link>
                     <Link to={'/venus'}><ButtonVenus><CircleVenus></CircleVenus>Venus</ButtonVenus></Link>
