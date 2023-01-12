@@ -7,7 +7,7 @@ export const BtnMenuMobile = styled.button`
     border:none;
     display: none;
     ${mobile({display: 'flex'})};
-    ${mobile({padding: '10px'})};
+    ${mobile({paddingRight: '20px'})};
 `
 export const CircleMercury = styled.div`
     display:none;
