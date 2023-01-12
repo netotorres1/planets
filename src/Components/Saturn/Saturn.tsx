@@ -44,11 +44,6 @@ const Saturn = () => {
                     {internalStructure  === true ? <ImageInternalStructure src={saturnInternal} /> : <></>}
                     {surfaceGeology === true ? <ImageSurfaceGeology src={saturngeology} /> : <></>}
                 </ContainerLeft>
-                <ButtonsMobile>
-                    <OverViewBtn  onClick={handleChangeOverView}>Overview</OverViewBtn>
-                    <StructureBtn onClick={handleChangeinternalStructure}>Structure</StructureBtn>
-                    <Surface onClick={handleChangesurfaceGeology}>Surface</Surface>
-                </ButtonsMobile>
                 <ContainerRight>
                     <ContainerRightContent>
                         <Title>Saturn</Title>
