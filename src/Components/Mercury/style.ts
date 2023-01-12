@@ -6,8 +6,7 @@ const bg = require('./../../assets/background-stars.svg').default;
 export const ButtonsMobile = styled.div`
     ${mobile({width: '380px'})};
     ${mobile({position: 'relative'})};
-    ${mobile({bottom: '270px'})};
-    ${mobile({bottom: '240px'})};
+    ${mobile({bottom: '200px'})};
     ${mobile({left: '0px'})};
     ${mobile({display: 'flex'})};
     ${mobile({justifyContent: 'space-between'})};
@@ -97,7 +96,7 @@ export const ContainerLeft = styled.div`
     justify-content: center;
     align-items: center;
     ${tablet({width: '100%'})};
-    ${mobile({marginTop: '50px'})};
+
 
 `
 export const ImageOverView = styled.img`
@@ -106,7 +105,6 @@ export const ImageOverView = styled.img`
     ${tablet({marginBottom: '100px'})};
 
     ${mobile({marginTop: '140px'})};
-    ${mobile({marginBottom: '30px'})};
 `
 export const ImageInternalStructure = styled.img`
     ${tablet({width: '30%'})};
