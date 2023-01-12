@@ -43,11 +43,6 @@ const Venus = () => {
                     {internalStructure  === true ? <ImageInternalStructure src={venusInternal} /> : <></>}
                     {surfaceGeology === true ? <ImageSurfaceGeology src={venusgeology} /> : <></>}
                 </ContainerLeft>
-                <ButtonsMobile>
-                    <OverViewBtn  onClick={handleChangeOverView}>Overview</OverViewBtn>
-                    <StructureBtn onClick={handleChangeinternalStructure}>Structure</StructureBtn>
-                    <Surface onClick={handleChangesurfaceGeology}>Surface</Surface>
-                </ButtonsMobile>
                 <ContainerRight>
                     <ContainerRightContent>
                         <Title>Venus</Title>

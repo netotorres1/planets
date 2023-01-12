@@ -44,11 +44,6 @@ const Mars = () => {
                     {internalStructure  === true ? <ImageInternalStructure src={marsInternal} /> : <></>}
                     {surfaceGeology === true ? <ImageSurfaceGeology src={marsgeology} /> : <></>}
                 </ContainerLeft>
-                <ButtonsMobile>
-                    <OverViewBtn  onClick={handleChangeOverView}>Overview</OverViewBtn>
-                    <StructureBtn onClick={handleChangeinternalStructure}>Structure</StructureBtn>
-                    <Surface onClick={handleChangesurfaceGeology}>Surface</Surface>
-                </ButtonsMobile>
                 <ContainerRight>
                     <ContainerRightContent>
                         <Title>Mars</Title>

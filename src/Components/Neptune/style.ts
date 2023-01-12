@@ -193,10 +193,11 @@ export const ContainerButtons = styled.div`
     justify-content: space-around;
     ${tablet({width: '40%'})};
 
-    ${mobile({display: 'none'})};
+    ${mobile({display: 'flex'})};
+    ${mobile({flexDirection: 'row'})};
     ${mobile({width: '90%'})};
     ${mobile({position: 'absolute'})};
-    ${mobile({bottom: '630px'})};
+    ${mobile({bottom: '550px'})};
     ${mobile({height: '70px'})};
 `
 export const Overview = styled.button`

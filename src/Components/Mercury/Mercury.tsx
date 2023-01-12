@@ -44,11 +44,6 @@ const Mercury = () => {
                     {internalStructure  === true ? <ImageInternalStructure src={mercuryInternal} /> : <></>}
                     {surfaceGeology === true ? <ImageSurfaceGeology src={mercurygeology} /> : <></>}
                 </ContainerLeft>
-                <ButtonsMobile>
-                    <OverViewBtn  onClick={handleChangeOverView}>Overview</OverViewBtn>
-                    <StructureBtn onClick={handleChangeinternalStructure}>Structure</StructureBtn>
-                    <Surface onClick={handleChangesurfaceGeology}>Surface</Surface>
-                </ButtonsMobile>
                 <ContainerRight>
                     <ContainerRightContent>
                         <Title>Mercury</Title>
@@ -71,7 +66,6 @@ const Mercury = () => {
                         </AboutSurfaceGeology> : <></>}
                         <Source>Source: Wikipeadia</Source>
                     </ContainerRightContent>
-
                     <ContainerButtons>
                         <Overview onClick={handleChangeOverView}>01 Overview</Overview>
                         <InternalStructure onClick={handleChangeinternalStructure}>02 Internal Structure</InternalStructure>

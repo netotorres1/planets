@@ -44,11 +44,6 @@ const Earth = () => {
                     {internalStructure  === true ? <ImageInternalStructure src={earthInternal} /> : <></>}
                     {surfaceGeology === true ? <ImageSurfaceGeology src={earthgeology} /> : <></>}
                 </ContainerLeft>
-                <ButtonsMobile>
-                    <OverViewBtn  onClick={handleChangeOverView}>Overview</OverViewBtn>
-                    <StructureBtn onClick={handleChangeinternalStructure}>Structure</StructureBtn>
-                    <Surface onClick={handleChangesurfaceGeology}>Surface</Surface>
-                </ButtonsMobile>
                 <ContainerRight>
                     <ContainerRightContent>
                         <Title>Earth</Title>
