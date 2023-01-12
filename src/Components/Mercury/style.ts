@@ -97,6 +97,7 @@ export const ContainerLeft = styled.div`
     justify-content: center;
     align-items: center;
     ${tablet({width: '100%'})};
+    ${mobile({marginTop: '50px'})};
 
 `
 export const ImageOverView = styled.img`
