@@ -116,7 +116,7 @@ export const Container = styled.header`
     ${mobile({width: '380px'})};
     ${mobile({flexDirection: 'row'})};
     ${mobile({justifyContent: 'space-between'})};
-    ${mobile({marginBottom: '50px'})};
+    ${mobile({marginBottom: '100px'})};
 
 `
 export const Logo = styled.h1`
