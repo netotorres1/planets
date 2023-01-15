@@ -9,8 +9,8 @@ React | Typescript | Styled-components | HTML | CSS
 <h2>Project --> <a href="https://jolly-frangollo-10c2c7.netlify.app/">Link</a></h2>
 <hr>
 
-![p1](https://user-images.githubusercontent.com/88563801/211985608-674a0eae-5f26-4148-a878-6bbbd77a79f2.png)
+![CapaPlanets](https://user-images.githubusercontent.com/88563801/212521720-848abc62-81a7-41bb-a66e-16ea58ea68cb.png)
 
-![p2](https://user-images.githubusercontent.com/88563801/211985623-3bf52762-7a6a-4e5b-9ba3-390b8c974493.PNG)
+![capafooterplanets](https://user-images.githubusercontent.com/88563801/212521734-e0dce908-d486-4ca4-9ba4-0a398971c21b.png)
 
-![p3](https://user-images.githubusercontent.com/88563801/211985637-5b38dcad-0825-462d-b86a-b4cf9600439a.PNG)
+![mobileplanets](https://user-images.githubusercontent.com/88563801/212521741-a727bc5a-39cf-4030-b3ac-b7729f28a157.png)
